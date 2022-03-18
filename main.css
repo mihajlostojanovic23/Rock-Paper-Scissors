@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background: #181e40;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.info-me {
+   width: 200px;
+   min-height: 100px;
+   border: 3px solid rgb(247, 247, 247);
+   background-color: rgb(165, 44, 149);
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.info-computer {
+    width: 200px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: rgb(39, 117, 207);
+    border: 3px solid rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-me h2, .scoreMe {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    margin: 3px auto;
+}
+
+.info-computer h2, .scoreComp {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    margin: 3px auto;
+}
+
+
+
+.name {
+    font-size: 25px;
+    color: wheat;
+}
+
+.score {
+min-width: 70px;
+height: 50px;
+border: 1px solid black;
+font-size: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: rgb(218, 218, 218);
+border-radius: 10px;
+padding: 10px 10px;
+}
+
+
+/*----------------- APP ------------------*/
+
+.app-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.img-triangel > img {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+    
+
+}
+
+
+.item {
+    width: 150px;
+    height: auto;
+    position: relative;
+}
+
+
+.item:first-child {
+    align-self: flex-end;
+
+}
+
+.item:last-child {
+    align-self: flex-end;
+}
+
+.item > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px inset rgb(245, 210, 10);
+    transition: 500ms all;
+}
+
+.item:nth-child(2) {
+    align-self: flex-start;
+}
+
+.item > .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 20;
+    padding: 0px 5px;
+    border-radius: 50%;
+    display: none;
+    transition: .5s all;
+}
+
+
+.item:hover .overlay {
+    display: block;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*******************RESULT*************************/
+
+
+.result {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: none;
+}
+
+
+.result-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.my-hand, .information, .computer-hand {
+    width: 150px;
+    min-height: 100px;
+   
+}
+
+.my-hand > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.information {
+    align-self: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information > button {
+    margin-top: 10px;
+    min-width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: .5s all;
+}
+
+.information > button:hover {
+    background-color: rgb(19, 19, 19);
+    transition: .5s all;
+}
+
+.computer-hand > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.infor {
+    text-align: center;
+    font-size: 40px;
+
+}
+
+@media only screen and (max-width: 565px) {
+    .infor {
+        font-size: 25px;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+@media only screen and (max-width: 452px) {
+    .img-triangel > img {
+        width: 300px;
+    }
+
+    .item {
+        width: 120px;
+    }
+
+    .rating {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 411px) {
+    .info-me {
+        margin-bottom: 10px;
+    } 
+
+    .item {
+        width: 105px;
+    }
+
+    .app-container {
+        margin: 50px 0px;
+    }
+    .my-hand {
+        width: 120px;
+    }
+
+    .computer-hand {
+        width: 120px;
+    }
+}

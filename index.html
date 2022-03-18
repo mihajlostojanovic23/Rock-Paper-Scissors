@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="app">
+    <div class="rating">
+            <div class="info-me">
+                <h2>MY SCORE</h2>
+                <div class="scoreMe">0</div>
+            </div>
+        <div class="info-computer">
+            <h2>COMPUTER SCORE</h2>
+            <div class="scoreComp">0</div>
+        </div>
+    </div>
+
+
+<div class="app-container">
+    <div class="img-triangel">
+        <img src="img/trougao.png" alt="">
+    </div>
+    <div class="items">
+        <div class="item"><img src="img/paper.png"  alt="">
+            <div class="overlay"  data-ime="papir"></div></div>
+        <div class="item"><img src="img/rock.png"  alt="">
+            <div class="overlay" data-ime="kamen"></div></div>
+        <div class="item"><img src="img/scissors.png" alt="">
+            <div class="overlay"  data-ime="makaze"></div></div>
+    </div>
+</div>
+
+<div class="result">
+<div class="result-content">
+    <div class="my-hand">
+        <img  id="my" alt="">
+    </div>
+    <div class="information">
+        <div class="infor">YOU WIN!</div>  
+    <button class="playagain">PLAY AGAIN</button>
+</div>
+
+    <div class="computer-hand">
+        <img src="img/rock.png" id="comp" alt="">
+    </div>
+</div>
+
+</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
